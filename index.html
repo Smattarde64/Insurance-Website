@@ -12,48 +12,48 @@
     <!-- Navbar-->
     <!-- Add picture of Virginia On The Left Side Of The Nav Bar Left of "AAA Insurance"-->
     <!-- Make Sure The Nav Bar Always Scrolls With User-->
-    <div class="container-fluid">
-
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary navbar-static-top">
-            <a class="navbar-brand" href="index.html">AAA Insurance</a>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <-- link Product Page here-->
-                        <!-- <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Home Insurance</a>
-                            <a class="dropdown-item" href="#">Car Insurance</a>
-                            <a class="dropdown-item" href="#">Roadside Assistance</a>
-                            <a class="dropdown-item" href="#">Watercraft</a>
-                            <a class="dropdown-item" href="#">Umbrella</a>
-                        </div> -->
-                    <!-- </li> --> 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Speak To Your Agent</a>
-                            </li>
-                    <li class="nav-item">
-                        <!-- Link contact info here-->
-                        <!-- Create A Form With Click To Call And A Email Inquiry-->
-                        <a class="nav-link" href="requestAQuote.html">Request A Quote</a>
-                    </li>
-                </ul>
+    <!-- Move outside of "Container to get full width nav bar"-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary navbar-static-top">
+        <!-- <a class="navbar-brand img-thumbnail rounded-circle img-fluid" href="#"><img src="virginiaJeep.jpg" height="50" alt="Virginia's Jeep"></a> -->
+        <!-- <div class="container img-fluid col-sm-1"> -->
+        <img src="virginiaJeep.jpg" class="col-sm-1 rounded-circle img-fluid float-left" alt="Virginia Insurance">
+        </div>
+        <a class="navbar-brand" href="index.html">AAA Insurance</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container row h-100 justify-content-center align-items-center">
+                <img src="orbit-logo.png" class="img-fluid" alt="AAA Insurance Logo">
             </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Speak To Your Agent</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link contact info here-->
+                            <!-- Create A Form With Click To Call And A Email Inquiry-->
+                            <a class="nav-link" href="requestAQuote.html">Request A Quote</a>
+                        </li>
+                    </ul>
+                </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Speak To Your Agent</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Link contact info here-->
+                    <!-- Create A Form With Click To Call And A Email Inquiry-->
+                    <a class="nav-link" href="requestAQuote.html">Request A Quote</a>
+                </li>
+            </ul>
+        </div>
         </nav>
-    </div>
-
-    <!-- Virginia Photo Placement (left Of Nav Bar)-->
-    <img src="virginiaJeep.jpg" class="img-thumbnail rounded-circle img-fluid float-left" alt="Virginia Insurance">
-    <!-- AAA Insurance Logo-->
-    <!-- Move To Center Of Nav Bar-->
-    <div class="container">
-        <img src="orbit-logo.png" class="img-fluid" alt="AAA Insurance Logo">
     </div>
     <!--Slideshow Picture Carousel Below Navbar On The Home Screen-->
     <!-- create a div to write text over the pictures if needed-->
@@ -86,46 +86,61 @@
 
 
     <!-- Cards For Information  5x Cards Pull from AAA website / copy-->
-    <div class="card">
-        <div class="card-body">
-            <img class="fa" src="https://img.icons8.com/ios-filled/50/000000/tow-truck.png">
-            <h5>24/7 Roadside Assistance</h5>
-            <p class="text-primary">We’ll be there if you need a tow or a jump start, lock your keys in your car, or get a flat tire</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <h5>Discounts</h5>
-            <p class="text-primary">Members get exclusive savings on shopping, dining, entertainment, travel, and more</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <i class="fa fa-wrench" aria-hidden="true"></i>
-            <h5>Approved Auto Repair</h5>
-            <p class="text-primary">Choose from AAA certified high-quality facilities for car maintenance and repairs</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <h5>Free identity theft protection</h5>
-            <p class="text-primary">Safeguard your information with daily credit monitoring and lost wallet assistance4</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <i class="fa fa-plane" aria-hidden="true"></i>
-            <h5>Travel</h5>
-            <p class="text-primary">Full-service travel agency includes free TourBook® guides; U.S., Canada, Mexico maps and more</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            <h5>Insurance</h5>
-            <p class="text-primary">Comprehensive coverage that meets your auto, home, life, and other needs5</p>
+    <div class="container mt-4">
+        <div class="card-deck">
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <img class="fa" src="https://img.icons8.com/ios-filled/50/000000/tow-truck.png">
+                    <h5>24/7 Roadside Assistance</h5>
+                    <p class="text-primary">We’ll be there if you need a tow or a jump start, lock your keys in your
+                        car, or get
+                        a flat tire</p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <h5>Discounts</h5>
+                    <p class="text-primary">Members get exclusive savings on shopping, dining, entertainment, travel,
+                        and more
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <h5>Approved Auto Repair</h5>
+                    <p class="text-primary">Choose from AAA certified high-quality facilities for car maintenance and
+                        repairs
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <h5>Free identity theft protection</h5>
+                    <p class="text-primary">Safeguard your information with daily credit monitoring and lost wallet
+                        assistance4
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                    <h5>Travel</h5>
+                    <p class="text-primary">Full-service travel agency includes free TourBook® guides; U.S., Canada,
+                        Mexico maps
+                        and more</p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <h5>Insurance</h5>
+                    <p class="text-primary">Comprehensive coverage that meets your auto, home, life, and other needs5
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
